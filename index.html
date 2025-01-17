@@ -4,25 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="CSS/styles.css">
   <!-- Font Awesome-->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
 <!--------- Header and nav ----------->
-  <header>
-    <nav class="global-nav">
+<header>
+  <nav class="global-nav">
+    <ul>
+
+       <!-- logo -->
+       <li class="logo"><a href="#home">
+        <img src="img/fav.png" alt="Logo">
+      </a></li>
+
+      <!-- icons -->
+      <li><a href="#search"><i class="fas fa-search"></i></a></li>
+      <li><a href="#profile"><i class="far fa-user-circle"></i></a></li>
+      <li><a href="#menu"><i class="fas fa-bars"></i></a></li>
+
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="image-container">
+    <img src="img/sea-4768869_1920.jpg" alt="sea and beach">
+    <div class="overlay-box">
       <ul>
-        <li><a href="#home">
-          <img src="img/fav.png" alt="Logo">
-        </a></li>
-        <li><a href="#search"><i class="fas fa-search"></i></a></li>
-        <li><a href="#profile"><i class="fas fa-user"></i></a></li>
-        <li><a href="#menu"><i class="fas fa-bars"></i></a></li>
+        <li>
+          <a href="">
+            <i class="fa fa-suitcase"></i> Fly + Hotel
+          </a>
+          <a href="">
+            <i class="fa fa-plane"></i> Fly 
+          </a>
+          <a href="">
+            <i class="fa fa-city"></i> Storby
+          </a>
+          <a href="">
+            <i class="fa fa-person-skiing"></i> Ski
+          </a>
+          <a href="">
+            <i class="fa fa-map-marked"></i> Kombinasjoner
+          </a>
+        </li>
+
+        <section class="travel">
+          <label for="fra">Fra:</label>
+          <input type="text" id="fra" placeholder="Oslo lufthavn">
+        </section>
+        <section class="travel">
+          <label for="Til">Til:</label>
+          <input type="text" id="fra" placeholder="Albania">
+        </section>
+        <section class="travel">
+          <label for="Reiselengse">Reiselengde:</label>
+          <input type="text" id="fra" placeholder="Mer enn en uke">
+        </section>
+        <section class="travel">
+          <label for="Velg dato">Velg dato:</label>
+          <input type="text" id="fra" placeholder="mm / dd / yyyy">
+        </section>
+        <section class="travel">
+          <label for="Antall resiendeo">Antall reisende:</label>
+          <input type="number" id="fra" placeholder="2">
+        </section>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </section>
+</main>
   
 </body>
 </html>
