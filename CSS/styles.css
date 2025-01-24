@@ -27,7 +27,7 @@ header .global-nav ul li a {
   text-decoration: none;
   font-size: 1.2rem;
   color: black;
-  font-size: 1.9rem;
+  font-size: 1.3rem;
   
 }
 
@@ -81,6 +81,47 @@ header .global-nav ul li.logo a img {
   text-decoration: none; 
   margin-bottom: 10px; 
   }
+
+  .scroll-list {
+    display: flex;
+    gap: 12px; 
+    overflow-x: auto; 
+    padding: 10px;
+    list-style: none;
+    position: relative; 
+    align-items: center; 
+    white-space: nowrap; 
+    
+  }
+  
+  .scroll-list a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    background: white;
+    border-radius: 10px;
+    flex-shrink: 0; 
+    display: inline-flex;
+    align-items: center;
+  }
+  .scroll-list a i {
+    margin-right: 8px; 
+  }
+  .arrow-icon {
+    position: absolute;
+    right: 10px; 
+    background: white;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .arrow-icon i {
+    font-size: 16px;
+  }
+  
 
   .travel{
     padding-top: 1.5rem;
