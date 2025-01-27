@@ -52,7 +52,6 @@
           </a>
         </li>
 
-    
         <section class="travel">
           <label for="fra">Fra:</label>
           <select id="fra" class="picker">
@@ -61,25 +60,34 @@
             <option value="bgo">Bergen Lufthavn</option>
             <option value="alta">Alta Lufthavn</option>
           </select>
+
         </section>
         <section class="travel">
-          <label for="Til">Til:</label>
-          <input type="text" id="fra" placeholder="Albania">
+          <label for="til">Til:</label>
+          <select id="til" class="picker">
+            <option value="" disabled selected>Albania</option>
+            <option value="spa">Spania</option>
+            <option value="thl">Thailand</option>
+            <option value="aus">Australia</option>
         </section>
+
         <form class="travel-container">
           <section class="travel">
             <label for="Reiselengse">Reiselengde:</label>
             <input type="number" id="reiselengde" placeholder="Mer enn en uke">
           </section>
+
           <section class="travel">
             <label for="Velg dato">Velg dato:</label>
             <input type="date" id="velg-dato" placeholder="mm / dd / yyyy">
           </section>
         </form>
+        
         <section class="travel">
           <label for="Antall resiendeo">Antall reisende:</label>
-          <input type="number" id="fra" placeholder="2">
+          <input type="number" id="amount" placeholder="2">
         </section>
+
         <section>
           <button class="search-btn">
             søk
@@ -88,6 +96,23 @@
       </ul>
     </div>
   </section>
+  <article class="order_the_summers_best">
+    <img src="img/holiday-2733322_1280.jpg" alt="woman bathing">
+    <div class="overlay-box-2">
+      <ul>
+        <li>
+          <p class="first">Bestill sommmerens beste</p>
+          <p class="second">uke</p>
+          <p class="thierd">Fly + hotell, 7 dager</p>
+          <p class="fourth">Fra 3298,-</p>
+        </li>
+      </ul>  
+    </div>
+    <button class="order_btn">
+      Bestill i dag
+    </button>
+  </article>
+  
 </main>
   
 </body>
