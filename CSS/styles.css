@@ -1,5 +1,5 @@
 body {
-  font-family:  sans-serif;
+  font-family: 'Montserrat', sans-serif;
   
 }
 /* ============================
@@ -7,34 +7,73 @@ body {
    ============================ */
 
 /* Global Header */
-header .global-nav ul {
-  display: flex;
-  justify-content: space-between;
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header styling */
+header {
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  display: grid;
   align-items: center;
+}
+
+.global-nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.global-nav ul {
+  display: contents;
+  align-items: start;
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-header .global-nav ul li.logo {
-  margin-right: auto;
-}
-
-header .global-nav ul li:not(.logo) {
-  margin-left: 15px;
-}
-
-header .global-nav ul li a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: black;
-  font-size: 1.3rem;
   
 }
 
-header .global-nav ul li.logo a img {
-  height: 4rem
+.global-nav li.logo {
+  grid-column: 1 / 2;
+  justify-self: start;
+  margin-right: 19rem;
+ 
 }
+
+.global-nav li:not(.logo) {
+  justify-self: end;
+  
+}
+
+.global-nav li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: black;
+}
+
+.global-nav li.logo a img {
+  height: 3.5rem;
+}
+.icon-container {
+  display: flex;
+  margin-right: 0.5rem;
+}
+/* denne funger ikke, dette er "konteinern til de tre ikonene den må justerers"*/
+.icon-conteiner{
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 0.5rem;
+}
+
 
 /* Global Footer */
 
@@ -60,8 +99,8 @@ header .global-nav ul li.logo a img {
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    width: 18rem;
-    height: 29rem;
+    width: 23rem;
+    height: 27rem;
     background-color: white;
     color: black;
     padding: 20px;
@@ -85,7 +124,7 @@ header .global-nav ul li.logo a img {
 
   @media (min-width: 1024px) {
     .overlay-box {
-      
+      display: flex;
       width: 90%; 
       height: 27rem; 
       padding: 30px; 
@@ -99,9 +138,11 @@ header .global-nav ul li.logo a img {
 
   @media (min-width: 1024px) {
     .travel {
-      display: inline-block; 
-      width: calc(50% - 1rem); 
+      display: flex;
+      flex-direction: row; 
+      width: calc(20% - 1rem); 
       margin-right: 1rem; 
+      
     }
   
     .travel:last-child {
@@ -109,8 +150,6 @@ header .global-nav ul li.logo a img {
     }
   }
 
-  
-  
   .scroll-list {
     display: flex;
     gap: 6px; 
@@ -121,8 +160,8 @@ header .global-nav ul li.logo a img {
     align-items: center; 
     white-space: nowrap; 
     margin-bottom: 1.5rem;
-    scrollbar-color: rgb(71, 200, 236) transparent; /* Thumb and track colors */
-    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: rgb(71, 200, 236) transparent; 
+    scrollbar-width: thin; 
   }
   
   .scroll-list a {
@@ -150,12 +189,7 @@ header .global-nav ul li.logo a img {
     cursor: pointer;
   }
   
-  .arrow-icon i {
-    font-size: 16px;
-  }
 
-  
-  
   .travel {
     padding-top: 1.5rem;
     position: relative;
@@ -173,9 +207,11 @@ header .global-nav ul li.logo a img {
   .travel label {
     position: absolute;
     left: 13px;
+    top: 10px;
     font-size: 12px;
     font-weight: bold;
     color: #555;
+    z-index: 4;
   }
   
   .travel input,
@@ -273,7 +309,7 @@ header .global-nav ul li.logo a img {
   
   .overlay-box-2 {
     position: absolute; 
-    top: 28rem; 
+    top: 29rem; 
     left: 2rem; 
     width: 72%; 
     height: 20%; 
@@ -284,9 +320,27 @@ header .global-nav ul li.logo a img {
     display: flex; 
     justify-content: start; 
     align-items: center; 
-    
-   
   }
+
+  @media (min-width: 1024px) {
+    .order_the_summers_best img {  
+      position: relative;
+      margin-top: 27rem; 
+      border-radius: 15px; 
+      width: 100%; 
+      height: 600px;
+    } }
+
+  @media (min-width: 1024px) {
+    .overlay-box-2 {  
+    position: absolute; 
+    top: 40rem; 
+    left: 49rem; 
+    width: 30%; 
+    height: 19%;
+    } }
+
+
   
   .overlay-box-2 ul {
     list-style: none;
@@ -297,7 +351,7 @@ header .global-nav ul li.logo a img {
   }
   
   .overlay-box-2 ul li p {
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     color:black
     
@@ -324,7 +378,7 @@ header .global-nav ul li.logo a img {
 .order_btn{
   position: absolute; 
   bottom: 20px; 
-  left: 50%;
+  left: 53%;
   transform: translateX(35%); 
   background-color:rgb(253, 198, 49);
   color: black;
@@ -332,10 +386,147 @@ header .global-nav ul li.logo a img {
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 5px;
-  cursor: pointer;
-    
+  cursor: pointer;  
 }
-  
+
+@media (min-width: 1024px) {
+  .order_btn {  
+    position: absolute; 
+    bottom: 24px; 
+    left: 70rem;
+    transform: translateX(35%); 
+    background-color:rgb(253, 198, 49);
+    color: black;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  } }
+
+  @media (min-width: 1213px) {
+    .order_btn {  
+      position: absolute; 
+      bottom: 75px; 
+      left: 64rem;
+      transform: translateX(35%); 
+      background-color:rgb(253, 198, 49);
+      color: black;
+      border: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    } }
+
+    .scroll-container{
+      position: absolute;
+      width: 100%;
+      background-color: white;
+    }
+
+    .scroll-list-two {
+      display: flex; 
+      flex-direction: row;
+      gap: 40px; 
+      overflow-x: scroll; 
+      padding: 10px;
+      padding-top: 50px;
+      list-style: none;
+      position: relative;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      scrollbar-color: rgb(71, 200, 236) transparent;
+      scrollbar-width: thin; 
+      margin-left: 1rem;
+      z-index: 3;
+    }
+    
+    .scroll-card {
+      flex-shrink: 0; 
+      width: 290px; 
+      scroll-snap-align: start; 
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 10px;
+    }
+    
+    .scroll-card h3 {
+      
+      margin-left: 0;
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    
+    .scroll-card p {
+      font-size: 0.6rem;
+      color: rgb(71, 200, 236);
+    }
+
+    .scroll-container-two {
+      position: absolute;
+      width: 100%;
+      background-color: white;
+}
+
+.advertising-list {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  overflow-x: scroll;
+  padding: 10px;
+  padding-top: 50px;
+  list-style: none;
+  position: relative;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  scrollbar-color: rgb(71, 200, 236) transparent;
+  scrollbar-width: thin;
+  margin-left: 1rem;
+  width: 100%;
+}
+
+.advertising-list p {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advertising-list h3 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.advertising-list img {
+  position: relative;
+  margin-top: 7rem;
+  margin-right: 0px;
+  border-radius: 9px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 0.8rem;
+}
+
+.scroll-card-three {
+  flex-shrink: 0;
+  width: 300px;
+  min-width: 300px;
+  height: auto;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  margin-left: 2rem;
+}
+
+    
 /* ============================
    HOTEL PAGE STYLES
    ============================ */
