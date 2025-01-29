@@ -494,6 +494,7 @@ header {
   position: relative;
   z-index: 1; 
   padding-left: 0.5rem;
+  
 }
 
 .advertising-list h3 {
@@ -505,6 +506,9 @@ header {
 .advertising-list p {
   margin-top: 0.5rem; 
   font-size: 0.8rem;
+  text-align: start;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 .advertising-list img {
   position: absolute; 
@@ -531,6 +535,16 @@ header {
   margin: 0; 
   padding: 0; 
 }
+
+.price {
+  text-align: start;
+  padding-top: 18px;
+}
+
+
+
+
+
 
 
 
