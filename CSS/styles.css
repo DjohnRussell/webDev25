@@ -22,11 +22,12 @@ header {
   grid-column: 1 / -1;
   display: grid;
   align-items: center;
+  padding: 0 20px; 
 }
 
 .global-nav {
   display: grid;
-  grid-template-columns: auto 1fr auto auto auto;
+  grid-template-columns: auto 1fr auto auto auto;  
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -39,14 +40,19 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-  
 }
 
 .global-nav li.logo {
   grid-column: 1 / 2;
   justify-self: start;
-  margin-right: 19rem;
- 
+  margin-right: 19rem;  
+}
+
+@media (min-width: 1024px) {
+  .global-nav li.logo {
+    margin-right: 80rem;  
+    
+  }
 }
 
 .global-nav li:not(.logo) {
@@ -63,16 +69,24 @@ header {
 .global-nav li.logo a img {
   height: 3.5rem;
 }
+
 .icon-container {
   display: flex;
-  margin-right: 0.5rem;
+  gap: 10px; 
+  margin-left: 3rem; 
+  
 }
-/* denne funger ikke, dette er "konteinern til de tre ikonene den må justerers"*/
-.icon-conteiner{
+
+.icon-conteiner {
   display: flex;
   justify-content: space-evenly;
-  margin-right: 0.5rem;
+  gap: 10px;  
 }
+
+.icon-conteiner i{
+  font-size: 1.6rem;  
+}
+
 
 
 /* Global Footer */
@@ -80,7 +94,7 @@ header {
 .footer{
   background-color: rgb(28, 28,28);
   position: relative;
-  top: calc(163rem + 100%);
+  top: calc(170rem + 100%);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -88,11 +102,40 @@ header {
   font-family: 'Montserrat', sans-serif;
   padding: 2rem 0;
   align-items: center;
-  
+}
+
+.flagg-conteiner article {
+  margin: -15px;
+  padding-bottom: 2rem;
+}
+
+.flagg-conteiner {
+  display: grid;
+  grid-template-columns: repeat(3, auto); 
+  row-gap: 40px;  
+  column-gap: 20px; 
+  justify-content: start;
+}
+
+.flag-and-contrey figure {
+  display: flex; 
+  align-items: center;
+  gap: 10px; 
+}
+
+.flag-and-contrey img {
+  width: 30px;
+  height: auto;
+}
+
+.flag-and-contrey p {
+  margin: 0;
+  font-size: 16px;
+  color: white;
 }
 
 .footer img{
-  width: 30px;
+  width: 24px;
 }
 
 .footer p{
@@ -110,7 +153,7 @@ header {
   gap: 20px;                  
 }
 
-/* Denne vil ikke bli til en rad må fikses*/
+
 .icon-conteiner-two{
   display: flex;
   flex-direction: row;
@@ -126,11 +169,6 @@ header {
   display: flex;
   flex-direction: row;
 }
-
-
-
-
-
 
 
 /* ============================
@@ -601,7 +639,7 @@ header {
 
 .scroll-container-three {
   position: absolute;
-  top: calc(30rem + 100%);
+  top: calc(35rem + 100%);
   width: 100%;
   background-color: white;
   margin-top: 10rem;
@@ -680,7 +718,7 @@ padding-top: 18px;
 
 .scroll-container-four {
   position: absolute;
-  top: calc(60rem + 100%);
+  top: calc(65rem + 100%);
   width: 100%;
   background-color: white;
   margin-top: 10rem;
@@ -759,7 +797,7 @@ padding-top: 18px;
 
 .scroll-container-five {
   position: absolute;
-  top: calc(90rem + 100%);
+  top: calc(95rem + 100%);
   width: 100%;
   background-color: white;
   margin-top: 10rem;
@@ -838,7 +876,7 @@ padding-top: 18px;
 
 .scroll-container-six {
   position: absolute;
-  top: calc(120rem + 100%);
+  top: calc(125rem + 100%);
   width: 100%;
   background-color: white;
   margin-top: 10rem;
@@ -917,7 +955,7 @@ padding-top: 18px;
 
 .scroll-container-seven {
   position: absolute;
-  top: calc(150rem + 100%);
+  top: calc(155rem + 100%);
   width: 100%;
   background-color: white;
   margin-top: 10rem;
