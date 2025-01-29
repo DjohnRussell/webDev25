@@ -541,6 +541,85 @@ header {
   padding-top: 18px;
 }
 
+/* Solskinnspriser*/
+
+.scroll-container-three {
+  position: absolute;
+  top: calc(30rem + 100%);
+  width: 100%;
+  background-color: white;
+  margin-top: 10rem;
+}
+
+.advertising-list-two {
+display: flex;
+flex-direction: row;
+gap: 70px;
+overflow-x: scroll;
+padding: 10px;
+padding-top: 50px;
+list-style: none;
+position: relative;
+align-items: center;
+margin-bottom: 1.5rem;
+scrollbar-color: rgb(71, 200, 236) transparent;
+scrollbar-width: thin;
+margin-left: 1rem;
+width: 100%;
+}
+
+.advertising-list-two h3,
+.advertising-list-two p {
+position: relative;
+z-index: 1; 
+padding-left: 0.5rem;
+
+}
+
+.advertising-list-two h3 {
+margin-top: 55%; 
+font-size: 1rem;
+padding-bottom: 0.5rem;
+}
+
+.advertising-list-two p {
+margin-top: 0.5rem; 
+font-size: 0.8rem;
+text-align: start;
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+}
+.advertising-list-two img {
+position: absolute; 
+top: 0; 
+left: 0; 
+object-fit: cover; 
+border-radius: 9px 9px 0 0; 
+width: 100%; 
+height: 50%; 
+}
+
+.scroll-card-four {
+flex-shrink: 0;
+width: 370px;
+min-width: 350px;
+height: 390px;
+scroll-snap-align: start;
+border-radius: 8px;
+background-color: #fff;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+overflow: hidden; 
+text-align: center;
+position: relative; 
+margin: 0; 
+padding: 0; 
+}
+
+.price {
+text-align: start;
+padding-top: 18px;
+}
+
 
 
 
