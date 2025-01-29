@@ -80,7 +80,7 @@ header {
 .footer{
   background-color: rgb(28, 28,28);
   position: relative;
-  top: calc(180rem + 100%);
+  top: calc(163rem + 100%);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -92,12 +92,42 @@ header {
 }
 
 .footer img{
-  width: 20px;
+  width: 30px;
 }
 
 .footer p{
   color: #fff;
 }
+
+.footer h3 {
+  color: white; 
+  padding-left: 2rem;
+}
+
+.footer .payment {
+  display: flex;              
+  flex-direction: column;        
+  gap: 20px;                  
+}
+
+/* Denne vil ikke bli til en rad må fikses*/
+.icon-conteiner-two{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .payment article i {
+  color: white; 
+  font-size: 29px;
+  padding-left: 2rem;
+}
+
+.nyhter{
+  display: flex;
+  flex-direction: row;
+}
+
+
 
 
 
