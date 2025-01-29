@@ -77,6 +77,30 @@ header {
 
 /* Global Footer */
 
+.footer{
+  background-color: rgb(28, 28,28);
+  position: relative;
+  top: calc(180rem + 100%);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 2rem 0;
+  align-items: center;
+  
+}
+
+.footer img{
+  width: 20px;
+}
+
+.footer p{
+  color: #fff;
+}
+
+
+
 /* ============================
    INDEX PAGE STYLES
    ============================ */
