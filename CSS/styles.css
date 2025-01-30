@@ -1,6 +1,5 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  
 }
 /* ============================
    GLOBAL STYLES
@@ -1031,16 +1030,81 @@ padding-top: 18px;
 }
 
 
-
-
-
-
-
-
 /* ============================
    HOTEL PAGE STYLES
    ============================ */
 
+   .scroll-container-hotel {
+    position: absolute;
+    width: 100vw; 
+    height: 50vh;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+  }
+  
+  .scroll-list-hotel {
+    display: flex;
+    flex-direction: row;
+    gap: 0; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    width: 100vw; 
+    margin: 0;
+    scrollbar-color: rgb(71, 200, 236) transparent;
+    scrollbar-width: thin;
+  }
+  
+  .scroll-hotel {
+    flex-shrink: 0;
+    width: 100vw; 
+    min-width: 100vw;
+    height: 100vh; 
+    scroll-snap-align: start;
+    background-color: #fff;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .scroll-list-hotel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; 
+    height: 50%; 
+    object-fit: cover; 
+  }
+
+  .link-to_something{
+    margin-top: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*-- Link under bilde "meny" --*/
+  .link-to_something p{
+    margin-top: 0;
+    padding-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 1rem;
+    font-size: 1.3rem; 
+    margin-top: 3px;
+  }
+
+  .link-to_something p:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(71, 200, 236); 
+    color: rgb(71, 200, 236);
+  }
+  
+  
 /* ============================
    ORDER PAGE STYLES
    ============================ */
