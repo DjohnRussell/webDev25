@@ -1035,58 +1035,58 @@ padding-top: 18px;
    ============================ */
 /* Jeg vet at denne skulle dekke hele område men jeg for ikke det til har jobbet med det så lenge og kan ikke bruke mer tid på den.*/
 /* har valgt ut fra ekstetiske grunner å sette venste padding til 3rem for at den skal oppleves sdom mer sentrert*/
-   .scroll-container-hotel {
-    position: absolute;
-    width: 100vw; 
-    height: 50vh;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    overflow: hidden; 
-    padding-left: 3rem;
-  }
+.scroll-container-hotel {
+  position: absolute;
+  width: 150vw; 
+  height: auto; 
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  padding-left: 3rem;
+}
+
+.scroll-list-hotel {
+  display: flex;
+  flex-direction: row;
+  gap: 0; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  width: 100vw; 
+  height: auto; 
+  margin: 0;
+  scrollbar-color: rgb(71, 200, 236) transparent;
+  scrollbar-width: thin;
   
-  .scroll-list-hotel {
-    display: flex;
-    flex-direction: row;
-    gap: 0; 
-    overflow-x: auto; 
-    scroll-snap-type: x mandatory;
-    padding: 0;
-    list-style: none;
-    align-items: center;
-    width: 100vw; 
-    height: 70vh;
-    margin: 0;
-    scrollbar-color: rgb(71, 200, 236) transparent;
-    scrollbar-width: thin;
-  }
-  
-  .scroll-hotel {
-    flex-shrink: 0;
-    width: 100vw; 
-    min-width: 100vw;
-    height: 100vh; 
-    scroll-snap-align: start;
-    background-color: #fff;
-    overflow: hidden;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .scroll-list-hotel img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw; 
-    height: 50%; 
-    object-fit: cover; 
-  }
+}
+
+.scroll-hotel {
+  flex-shrink: 0;
+  width: 100vw; 
+  min-width: 100vw;
+  height: auto; 
+  scroll-snap-align: start;
+  background-color: #fff;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-list-hotel img {
+  position: relative; 
+  width: 100vw; 
+  height: auto; 
+  object-fit: cover; 
+}
+
 
   .link-to_something{
-    margin-top: 100%;
+    margin-top: 25rem;
     display: flex;
     flex-direction: row;
   }
@@ -1199,7 +1199,7 @@ padding-top: 18px;
   .icon-and-text article:nth-child(2),
   .icon-and-text article:nth-child(3) {
   margin-left: -20px; 
-}
+  }
 
    .link-eindom{
     padding-left: 0.2rem;
@@ -1214,16 +1214,16 @@ padding-top: 18px;
     margin: auto; 
   }
 
-.map iframe {
+  .map iframe {
     width: 100%; 
     height: 300px; 
     
-}
+  }
 
-.map h3{
+  .map h3{
   font-size: 1.5rem;
   padding-left: 1rem;
- }
+  }
 
   
   /* ----------------------- */
