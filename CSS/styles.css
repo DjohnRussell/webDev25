@@ -44,12 +44,12 @@ header {
 .global-nav li.logo {
   grid-column: 1 / 2;
   justify-self: start;
-  margin-right: 19rem;  
+  margin-right: 15rem;  
 }
 
 @media (min-width: 1024px) {
   .global-nav li.logo {
-    margin-right: 80rem;  
+    margin-right: 70rem;  
     
   }
 }
@@ -71,15 +71,15 @@ header {
 
 .icon-container {
   display: flex;
-  gap: 10px; 
-  margin-left: 3rem; 
+  gap: 7px; 
+  margin-left: 2rem; 
   
 }
 
 .icon-conteiner {
   display: flex;
   justify-content: space-evenly;
-  gap: 10px;  
+  gap: 9px;  
 }
 
 .icon-conteiner i{
@@ -193,7 +193,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     width: 23rem;
-    height: 27rem;
+    height: 29rem;
     background-color: white;
     color: black;
     padding: 20px;
