@@ -1056,6 +1056,7 @@ padding-top: 18px;
     list-style: none;
     align-items: center;
     width: 100vw; 
+    height: 70vh;
     margin: 0;
     scrollbar-color: rgb(71, 200, 236) transparent;
     scrollbar-width: thin;
@@ -1065,7 +1066,7 @@ padding-top: 18px;
     flex-shrink: 0;
     width: 100vw; 
     min-width: 100vw;
-    height: 100vh; 
+    height: 70vh; 
     scroll-snap-align: start;
     background-color: #fff;
     overflow: hidden;
@@ -1154,16 +1155,58 @@ padding-top: 18px;
     font-size: 0.6rem; 
   }
 
-  .anmeldelser{
-    color: rgb(71, 200, 236);
-    font-size: 0.5rem;
-    font-weight: 300;
-    
-  }
+ 
   .column{
     display: flex;
     flex-direction: column;
   }
+
+  .fasiliteter h3, p{
+    padding-left: 1rem;
+  }
+
+  .icon-and-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px; 
+    justify-items: center; 
+    align-items: center; 
+  }
+  
+  .icon-and-text article {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    text-align: center; 
+  }
+  
+  .icon-and-text i {
+    font-size: 1rem; 
+    margin-right: 10px; 
+  }
+  
+  .icon-and-text p {
+    margin: 0;
+    font-size: 1rem; 
+  }
+  
+  .icon-and-text article:first-child i {
+    margin-left: 0; 
+  }
+  
+  .icon-and-text article:nth-child(2),
+  .icon-and-text article:nth-child(3) {
+  margin-left: -20px; 
+}
+
+   .link-eindom{
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+    color: rgb(71, 200, 236);
+    font-size: 0.9rem;
+   }
+  
   /* ----------------------- */
   
   
