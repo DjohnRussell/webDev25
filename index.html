@@ -21,14 +21,20 @@
         <a href="#home">
           <img src="img/fav.png" alt="Logo">
         </a>
-      </li><section class="icon-conteiner">
-        <li><a href="#search"><i class="fas fa-search"></i></a></li>
-        <li><a href="#profile"><i class="far fa-user-circle"></i></a></li>
-        <li><a href="#menu"><i class="fas fa-bars"></i></a></li>
-      </section>
+      </li>
+      <li class="icon-container"> 
+        <a href="#search"><i class="fas fa-search"></i></a>
+      </li>
+      <li class="icon-container">
+        <a href="#profile"><i class="far fa-user-circle"></i></a>
+      </li>
+      <li class="icon-container">
+        <a href="#menu"><i class="fas fa-bars"></i></a>
+      </li>
     </ul>
   </nav>
 </header>
+
 
 <main>
   <section class="image-container">
@@ -36,67 +42,58 @@
     <div class="overlay-box">
       <ul>
         <li class="scroll-list">
-          <a href="">
-            <i class="fa fa-suitcase"></i> Fly + Hotel
-          </a>
-          <a href="">
-            <i class="fa fa-plane"></i> Fly 
-          </a>
-          <a href="">
-            <i class="fa fa-city"></i> Storby
-          </a>
-          <a href="">
-            <i class="fa fa-person-skiing"></i> Ski
-          </a>
-          <a href="">
-            <i class="fa fa-map-marked"></i> Kombinasjoner
-          </a>
+          <a href=""><i class="fa fa-suitcase"></i> Fly + Hotel</a>
+          <a href=""><i class="fa fa-plane"></i> Fly</a>
+          <a href=""><i class="fa fa-city"></i> Storby</a>
+          <a href=""><i class="fa fa-person-skiing"></i> Ski</a>
+          <a href=""><i class="fa fa-map-marked"></i> Kombinasjoner</a>
         </li>
-
-        <section class="travel">
-          <label for="fra">Fra:</label>
-          <select id="fra" class="picker">
-            <option value="" disabled selected>Oslo lufthavn</option>
-            <option value="trp">Torp Sandefjord</option>
-            <option value="bgo">Bergen Lufthavn</option>
-            <option value="alta">Alta Lufthavn</option>
-          </select>
-
-        </section>
-        <section class="travel">
-          <label for="til">Til:</label>
-          <select id="til" class="picker">
-            <option value="" disabled selected>Albania</option>
-            <option value="spa">Spania</option>
-            <option value="thl">Thailand</option>
-            <option value="aus">Australia</option>
-        </section>
-
-        <form class="travel-container">
-          <section class="travel">
-            <label for="Reiselengse">Reiselengde:</label>
-            <input type="number" id="reiselengde" placeholder="Mer enn en uke">
-          </section>
-
-          <section class="travel">
-            <label for="Velg dato">Velg dato:</label>
-            <input type="date" id="velg-dato" placeholder="mm / dd / yyyy">
-          </section>
-        </form>
-
-        <section class="travel">
-          <label for="Antall resiendeo">Antall reisende:</label>
-          <input type="number" id="amount" placeholder="2">
-        </section>
-
-        <section>
-          <button class="search-btn">
-            søk
-          </button>
-        </section>
       </ul>
+      
+      <section class="travel">
+        <label for="fra">Fra:</label>
+        <select id="fra" class="picker">
+          <option value="" disabled selected>Oslo lufthavn</option>
+          <option value="trp">Torp Sandefjord</option>
+          <option value="bgo">Bergen Lufthavn</option>
+          <option value="alta">Alta Lufthavn</option>
+        </select>
+      </section>
+      
+      <section class="travel">
+        <label for="til">Til:</label>
+        <select id="til" class="picker">
+          <option value="" disabled selected>Albania</option>
+          <option value="spa">Spania</option>
+          <option value="thl">Thailand</option>
+          <option value="aus">Australia</option>
+        </select>
+      </section>
+      
+      <form class="travel-container">
+        <section class="travel">
+          <label for="reiselengde">Reiselengde:</label>
+          <input type="number" id="reiselengde" placeholder="Mer enn en uke">
+        </section>
+      
+        <section class="travel">
+          <label for="velg-dato">Velg dato:</label>
+          <input type="date" id="velg-dato">
+        </section>
+      </form>
+      
+      <section class="travel">
+        <label for="antall-resiendet">Antall reisende:</label>
+        <input type="number" id="antall-resiendet" placeholder="2">
+      </section>
+      
+      <section>
+        <button class="search-btn">søk</button>
+      </section>
+      
     </div>
   </section>
+
   <article class="order_the_summers_best">
     <img src="img/holiday-2733322_1280.jpg" alt="woman bathing">
     <div class="overlay-box-2">
@@ -107,13 +104,13 @@
           <p class="thierd">Fly + hotell, 7 dager</p>
           <p class="fourth">Fra 3298,-</p>
         </li>
-      </ul>  
-    </div>
+      </ul> <!-- ul is properly closed here -->
 
-    <button class="order_btn" onclick="location.href='order.html'">
-      Bestill i dag
-    </button>
-  </article>
+      <button class="order_btn" onclick="location.href='order.html'">
+        Bestill i dag
+      </button> <!-- Button moved outside the <ul> -->
+    </div>
+</article>
 
   <section class="scroll-container">
     <section class="scroll-list-two">
@@ -129,7 +126,7 @@
   
       <article class="scroll-card">
         <h3>Mars - spar opptill 5000,-</h3>
-        <p>Sikre deg et ferie kupp</p>
+        <p>Sikre deg et ferie</p>
       </article>
     </section>
   </section>
@@ -442,11 +439,6 @@
       </article>
     </section>
     </section>
-
-    
-
-    </section>
-   
    </section>
 </footer>  
 </body>

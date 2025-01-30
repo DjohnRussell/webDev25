@@ -1033,7 +1033,8 @@ padding-top: 18px;
 /* ============================
    HOTEL PAGE STYLES
    ============================ */
-
+/* Jeg vet at denne skulle dekke hele område men jeg for ikke det til har jobbet med det så lenge og kan ikke bruke mer tid på den.*/
+/* har valgt ut fra ekstetiske grunner å sette venste padding til 3rem for at den skal oppleves sdom mer sentrert*/
    .scroll-container-hotel {
     position: absolute;
     width: 100vw; 
@@ -1042,6 +1043,7 @@ padding-top: 18px;
     margin: 0;
     padding: 0;
     overflow: hidden; 
+    padding-left: 3rem;
   }
   
   .scroll-list-hotel {
@@ -1103,6 +1105,66 @@ padding-top: 18px;
     text-decoration-color: rgb(71, 200, 236); 
     color: rgb(71, 200, 236);
   }
+
+  .sun-icons{
+    color: rgb(253, 199, 51);
+    padding-left: 1rem;
+  }
+
+  .review{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-left: 1rem;
+    padding-top: 2rem;
+  }
+
+  .place h3 {
+    padding-left: 1rem;
+  }
+
+  .review p {
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    top: -15px; 
+  }
+  /* Prøver å lage rateing ikonet*/
+
+  .fa-square {
+    position: relative;
+    border-radius: 7px;  
+    background-color: rgb(15, 105, 3); 
+    width: 30px; 
+    height: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fa-square i {
+    background: transparent; 
+    color: rgb(15, 105, 3); 
+    font-size: 1.2rem; 
+  }
+  
+  .rating {
+    position: absolute;
+    color: white;
+    font-size: 0.6rem; 
+  }
+
+  .anmeldelser{
+    color: rgb(71, 200, 236);
+    font-size: 0.5rem;
+    font-weight: 300;
+    
+  }
+  .column{
+    display: flex;
+    flex-direction: column;
+  }
+  /* ----------------------- */
   
   
 /* ============================
