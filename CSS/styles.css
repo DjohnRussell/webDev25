@@ -1362,6 +1362,75 @@ form {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
 }
 
+.date-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-inputs input {
+  width: 30%; 
+  margin-right: 10px; 
+}
+
+.date-inputs input:last-child {
+  margin-right: 0; 
+}
+
+label[for="kvinner"], label[for="menn"] {
+  display: inline-block;
+  margin-right: 15px; 
+  font-size: 16px;
+  vertical-align: middle; 
+  margin-top: 3rem;
+}
+
+input[type="radio"] {
+  margin-right: 5px; 
+  margin-top: 3rem;
+  vertical-align: middle; 
+  display: inline-block; 
+}
+
+label[for=E-ADRESSENE] {
+  margin-top: 1rem;
+}
+
+label[for=telefonnummer] {
+  margin-top: 1rem;
+}
+
+label[for=gateadresse] {
+  margin-top: 1rem;
+}
+
+label[for=postnummer] {
+  margin-top: 1rem;
+}
+
+label[for=poststed] {
+  margin-top: 1rem;
+}
+
+label[for=land] {
+  margin-top: 1rem;
+}
+
+.form-two{
+  margin-top: 1rem;
+}
+
+.siste-btn{
+  position: absolute; 
+  margin-top: 1rem; 
+  background-color:rgb(253, 198, 49);
+  color: black;
+  border: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
 
 
 
