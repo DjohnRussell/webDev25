@@ -1230,6 +1230,54 @@ padding-top: 18px;
   padding-left: 1rem;
   }
 
+  .card-hotel-two img {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    object-fit: cover; 
+    border-radius: 9px 9px 0 0; 
+    width: 100%; 
+    height: 50%; 
+    }
+    
+    .card-hotel-two {
+    flex-shrink: 0;
+    width: 370px;
+    min-width: 350px;
+    height: 520px;
+    scroll-snap-align: start;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    position: relative; 
+    margin: 0; 
+    padding: 0; 
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    }
+
+    .card-hotel-two p {
+      font-family: 'Montserrat', sans-serif;
+      
+    }
+    .section-p {
+     font-size: 11px;
+     margin: 4px 0; 
+      line-height: 0.5
+    }
+  
+    .card-hotel-two h3 {
+      margin-top: 270px; 
+      margin-left: 1rem;
+    }
+
+    .pr {
+      font-size: 1.4rem; 
+      font-weight: bold;
+  }
+
+   
   
   /* ----------------------- */
   
