@@ -1093,16 +1093,20 @@ padding-top: 18px;
   }
 
   /*-- Link under bilde "meny" --*/
-  .link-to_something p{
+ 
+
+  .link-to_something a{
     margin-top: 0;
     padding-top: 0;
     font-family: 'Montserrat', sans-serif;
     padding-left: 1rem;
     font-size: 1.3rem; 
     margin-top: 3px;
+    text-decoration: none;
   }
 
-  .link-to_something p:hover {
+
+  .link-to_something a:hover {
     text-decoration: underline;
     text-decoration-color: rgb(71, 200, 236); 
     color: rgb(71, 200, 236);
@@ -1303,6 +1307,15 @@ padding-top: 18px;
     font-size: 1.2rem;
     display: inline-block;  
     padding-right: 20px;  
+}
+
+.scroll-list-order a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight:500; 
+  padding-right: 20px; 
 }
 
 
