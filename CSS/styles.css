@@ -15,6 +15,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 /* Header styling */
 header {
   grid-row: 1 / 2;
@@ -1264,7 +1265,7 @@ padding-top: 18px;
     .section-p {
      font-size: 11px;
      margin: 4px 0; 
-      line-height: 0.5
+     line-height: 0.5
     }
   
     .card-hotel-two h3 {
@@ -1276,12 +1277,92 @@ padding-top: 18px;
       font-size: 1.4rem; 
       font-weight: bold;
   }
-
-   
-  
   /* ----------------------- */
   
   
 /* ============================
    ORDER PAGE STYLES
    ============================ */
+
+   .scroll-list-order {
+    background-color: rgb(71, 200, 236);
+    color: white;
+    padding: 10px;
+    width: 100%; 
+    max-width: 600px;  
+    height: 40px;  
+    overflow-x: auto; 
+    overflow-y: hidden;  
+    white-space: nowrap;  
+    box-sizing: border-box; 
+    
+}
+
+.scroll-list-order p {
+    margin: 0;
+    font-size: 1.2rem;
+    display: inline-block;  
+    padding-right: 20px;  
+}
+
+
+.card-order{
+    flex-shrink: 0;
+    width: 20px;
+    min-width: 30%;
+    height: 45px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    position: relative; 
+    margin: 0; 
+    padding: 0; 
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+
+.card-order p {
+  font-size: 1rem;
+  font-weight:500;  
+}
+
+.Order-detales h3 {
+  margin-left: 1rem;
+}
+
+.Order-detales {
+  padding: 20px;
+}
+
+h3 {
+  margin: 0 0 10px 0;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;  
+  margin-bottom: 15px;
+}
+
+form {
+  background-color: #f9f9f9;  
+  padding: 20px;
+  border-radius: 8px;  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+}
+
+
+
+
+
