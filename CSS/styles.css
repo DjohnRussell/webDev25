@@ -176,6 +176,13 @@ header {
   flex-direction: row;
 }
 
+.tilgjen h3 a{
+  color: white; 
+  font-size: 23px;
+  padding-left: 0rem;
+  text-decoration: none;
+}
+
 
 /* ============================
    INDEX PAGE STYLES
