@@ -165,6 +165,12 @@ header {
   padding-left: 2rem;
 }
 
+.footer .payment article a {
+  color: white; 
+  font-size: 29px;
+  padding-left: 2rem;
+}
+
 .nyhter{
   display: flex;
   flex-direction: row;
